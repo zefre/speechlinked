@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>SpeechLink::Forms</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="./bootstrap/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="./bootstrap/css/carousel.css" rel="stylesheet">
+    <link href = "./bootstrap/css/custom.css" rel = "stylesheet">
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">SpeechLink</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="milestones.html">Milestones</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li class = "active"><a href="forms.html">Forms</a></li>
+                <li><a href = "currentevents.html">Current Events</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class = "container" role = "main">
+      <div class = "page-header">
+        <h1>Forms</h1>
+        <p class = "lead">Page dedicated to the paperwork of speech pathology.</p>
+      </div>
+      <h3>Intake form</h3>
+      <p class = "bg-danger">Form is not yet functional, but will be soon. Please contact us via phone or return later.</p>
+      <form class = "form-horizontal">
+        <fieldset>
+          <legend class = "text-uppercase text-center">Patient Information</legend>
+          <div class = "form-group">
+            <label for = "patient-last-name" class = "col-md-2">Last name</label>
+            <div class = "col-md-3">
+              <input type = "text" class = "form-control" id = "patient-last-name" />
+            </div>
+            <label for = "patient-first-name" class = "col-md-2">First name</label>
+            <div class = "col-md-3">
+              <input type  = "text" class = "form-control" id = "patient-first-name"/>
+            </div>
+          </div>
+          <div class = "form-group">
+            <label for = "patient-middle-initial" class = "col-md-2">Middle initial</label>
+            <div class = "col-md-3">
+              <input type = "text" class = "form-control" id = "patient-middle-initial" />
+            </div>
+            <label for = "sex" class = "col-md-2">Sex</label>
+            <div class = "col-md-1">
+              <label>M
+                  <input type = "radio" name = "sex" value = "patient-sex-male" id = "patient-sex-male" />
+              </label>
+            </div>
+            <div class = "col-md-1">
+              <label>F
+                <input type = "radio" name = "sex" value = "patient-sex-female" id = "patient-sex-female" />
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="patient-birth-date" class="col-md-2">Birth date</label>
+            <div class="col-md-3">
+              <input class="form-control" id="patient-birth-date" type="date">
+            </div>
+            <label for="patient-age" class="col-md-2">Age</label>
+            <div class="col-md-3">
+              <input class="form-control" id="patient-age" type="text">
+            </div>
+          </div>
+          <div class = "form-group">
+            <label for = "responsible-party" class = "col-md-2">Responsible party</label>
+            <div class = "col-md-3">
+              <input type = "text" class = "form-control" id = "responsible-party" />
+            </div>
+            <label for = "relationship-to-patient" class = "col-md-2">Relationship to patient</label>
+            <div class = "col-md-3">
+              <input type  = "text" class = "form-control" id = "relationship-to-patient"/>
+            </div>
+          </div>
+          <div class = "form-group">
+            <label for = "streetaddress" class = "col-md-2">Street address:</label>
+            <div class = "col-md-3">
+              <input type = "text" class = "form-control" id = "streetaddress" />
+            </div>
+            <label for = "city" class = "col-md-2">City:</label>
+            <div class = "col-md-3">
+              <input type = "text" class = "form-control" id = "city" />
+            </div>
+          </div>
+          <div class = "form-group">
+            <label for = "state-zip" class = "col-md-2">State &amp; Zip code:</label>
+             <div class = "col-md-3">
+              <input type = "text" class = "form-control" id = "state-zip" />
+            </div>
+            <label for = "home-phone" class = "col-md-2">Home phone:</label>
+            <div class = "col-md-3">
+              <input type = "text" class = "form-control" id = "home-phone" />
+            </div>
+          </div>
+          <div class = "form-group">
+            <label for = "moms-cell" class = "col-md-2">Mom's cell</label>
+            <div class = "col-md-3">
+              <input type = "text" class = "form-control" id = "moms-cell" />
+            </div>
+            <label for = "dads-cell" class = "col-md-2">Dad's cell</label>
+            <div class = "col-md-3">
+              <input type = "text" class = "form-control" id = "dads-cell" />
+            </div>
+          </div>
+          <div class = "form-group">
+            <label class = "col-md-2" for = "email-adress">Email address:</label>
+            <div class = "col-md-3">
+              <input type = "text" class = "form-control" id = "email-address" />
+            </div>
+            <label class = "col-md-2" for = "preferred-contact">Preferred method of contact:</label>
+            <div class = "col-md-3">
+              <input type = "text" class = "form-control" id = "preferred-contact" />
+            </div>
+          </div>
+          <hr class = "thick" /> <!-- See custom.css -->
+        </fieldset>
+        <fieldset>
+          <legend class = "text-uppercase text-center">Insurance Information</legend>
+          <div class = "form-group">
+            <label for = "insured-party" class = "col-md-2">Insured party</label>
+            <div class = "col-md-3">
+              <input type = "text" class = "form-control" id = "insured-party" />
+            </div>
+            <label for = "insurance-birth-date" class = "col-md-2">Birth date</label>
+            <div class = "col-md-3">
+              <input type = "date" class = "form-control" id = "insurance-birth-date" /> <!-- Remember to fix this -->
+            </div>
+          </div>
+          <div class = "form-group">
+            <label for = "home-phone" class = "col-md-2">Home phone</label>
+            <div class = "col-md-3">
+              <input type = "text" class = "form-control" id = "home-phone" />
+            </div>
+            <label for = "insurance-address" class = "col-md-2">Address (if different)</label>
+            <div class = "col-md-3">
+              <input type = "text" class = "form-control" id = "insurance-address" /> <!-- Remember to fix this -->
+            </div>
+          </div>
+          <div class = "form-group">
+            <label for = "home-phone" class = "col-md-2">Home phone</label>
+            <div class = "col-md-3">
+              <input type = "text" class = "form-control" id = "home-phone" />
+            </div>
+            <label for = "insurance-address" class = "col-md-2">Address (if different)</label>
+            <div class = "col-md-3">
+              <input type = "text" class = "form-control" id = "insurance-address" /> <!-- Remember to fix this -->
+            </div>
+          </div>
+          <div class = "form-group">
+            <label for = "insurance-city" class = "col-md-2">City</label>
+            <div class = "col-md-3">
+              <input type = "text" class = "form-control" id = "insurance-city" />
+            </div>
+            <label for = "moms-name" class = "col-md-2">Mom's name</label>
+            <div class = "col-md-3">
+              <input type = "text" class = "form-control" id = "moms-name" />
+            </div>
+          </div>
+          <div class = "form-group">
+            <label for = "insurance-moms-birthdate" class = "col-md-2">Birth date</label>
+            <div class = "col-md-3">
+              <input type = "text" class = "form-control" id = "insurance-moms-birthdate" />
+            </div>
+            <label for = "insurance-street-address" class = "col-md-2">Street address</label>
+            <div class = "col-md-3">
+              <input type = "text" class = "form-control" id = "insurance-street-address" />
+            </div>
+          </div>
+          <div class = "form-group">
+            <label for = "insurance-street-address-city" class = "col-md-2">City</label>
+            <div class = "col-md-3">
+              <input type = "text" class = "form-control" id = "insurance-street-address-city" />
+            </div>
+            <label for = "insurance-state-zip" class = "col-md-2">State &amp; Zip code</label>
+            <div class = "col-md-3">
+              <input type = "text" class = "form-control" id = "insurance-state-zip" />
+            </div>
+          </div>
+          <div class = "form-group">
+            <label for = "insurance-home-phone" class = "col-md-2">Home phone</label>
+            <div class = "col-md-3">
+              <input type = "text" class = "form-control" id = "insurance-home-phone" />
+            </div>
+            <label for = "insurance-work-phone" class = "col-md-2">Work phone</label>
+            <div class = "col-md-3">
+              <input type = "text" class = "form-control" id = "insurance-work-phone" />
+            </div>
+          </div>
+          <div class = "form-group">
+            <label for = "insurance-occupation" class = "col-md-2">Occupation</label>
+            <div class = "col-md-3">
+              <input type = "text" class = "form-control" id = "insurance-occupation" />
+            </div>
+            <label for = "insurance-email" class = "col-md-2">E-mail</label>
+            <div class = "col-md-3">
+              <input type = "text" class = "form-control" id = "insurance-email" />
+            </div>
+          </div>
+          <div class = "form-group">
+            <label for = "insurance-employer" class = "col-md-2">Employer</label>
+            <div class = "col-md-3">
+              <input type = "text" class = "form-control" id = "insurance-employer" />
+            </div>
+            <label for = "insurance-employer-address" class = "col-md-2">Employer address</label>
+            <div class = "col-md-3">
+              <input type = "text" class = "form-control" id = "insurance-employer-address" />
+            </div>
+          </div>
+          <div class = "form-group">
+            <label for = "insurance-employer-phone" class = "col-md-2">Employer phone number</label>
+            <div class = "col-md-3">
+              <input type = "text" class = "form-control" id = "insurance-employer-phone" />
+            </div>
+            <label for = "insurance-primary-insurance" class = "col-md-2">Primary insurance</label>
+            <div class = "col-md-3">
+              <input type = "text" class = "form-control" id = "insurance-primary-insurance" />
+            </div>
+          </div>
+          <div class = "form-group">
+            <label for = "insurance-relationship-to-patient" class = "col-md-2">Relationship to patient</label>
+            <div class = "col-md-3">
+              <input type = "text" class = "form-control" id = "insurance-relationship-to-patient" />
+            </div>
+            <label for = "insurance-group-number" class = "col-md-2">Group number</label>
+            <div class = "col-md-3">
+              <input type = "text" class = "form-control" id = "insurance-group-number" />
+            </div>
+          </div>
+          <div class = "form-group">
+            <label for = "insurance-policy-number" class = "col-md-2">Policy number</label>
+            <div class = "col-md-3">
+              <input type = "text" class = "form-control" id = "insurance-policy-number" />
+            </div>
+            <label for = "insurance-covered" class = "col-md-2">Patient covered by insurance?</label>
+            <div class = "col-md-1">
+              <label>Yes
+                <input type = "radio" name = "insurance-covered" value = "insurance-covered-yes" id = "insurance-covered-yes" />
+              </label>
+            </div>
+            <div class = "col-md-1">
+              <label>No
+                <input type = "radio" name = "insurance-covered" value = "insurance-covered-no" id = "insurance-covered-no" />
+              </label>
+            </div>
+          </div>
+        </fieldset>
+        <hr class = "thick" />
+        <fieldset>
+          <legend class = "text-uppercase text-center">Pregnancy/Birth History</legend>
+          <div class = "form-group">
+            <label for = "pregnancy-events">Did any of the following events occur during this pregnancy?</label>
+            <div class = "row">
+              <div class = "col-md-3">
+                <label>Allergies/Asthma
+                  <input type = "checkbox" name = "pregnancy-events" value = "pregnancy-events-allergy-asthma" />
+                </label>
+              </div>
+              <div class = "col-md-3">
+                <label>Anemia
+                  <input type = "checkbox" name = "pregnancy-events" value = "pregnancy-events-anemia" />
+                </label>
+              </div>
+              <div class = "col-md-3">
+                <label>Diabetes/Blood sugar problems
+                  <input type = "checkbox" name = "pregnancy-events" value = "pregnancy-events-diabetes-blood-sugar" />
+                </label>
+              </div>
+              <div class = "col-md-3">
+                <label>Edema
+                  <input type = "checkbox" name = "pregnancy-events" value = "pregnancy-events-edema" />
+                </label>
+              </div>
+            </div>
+            <div class = "row">
+              <div class = "col-md-3">
+                <label>Excessive vomiting
+                  <input type = "checkbox" name = "pregnancy-events" value = "pregnancy-events-excessive-vomiting" />
+                </label>
+              </div>
+              <div class = "col-md-3">
+                <label>Heart disease
+                  <input type = "checkbox" name = "pregnancy-events" value = "pregnancy-events-hear-disease" />
+                </label>
+              </div>
+              <div class = "col-md-3">
+                <label>Headaches/migraines
+                  <input type = "checkbox" name = "pregnancy-events" value = "pregnancy-events-headaches-migraines" />
+                </label>
+              </div>
+                <div class = "col-md-3">
+                  <label>Kidney disease
+                    <input type = "checkbox" name = "pregnancy-events" value = "pregnancy-events-kidney-disease" />
+                  </label>
+                </div>
+              </div>
+              <div class = "row">
+                <div class = "col-md-3">
+                  <label>Pre-Eclampsia
+                    <input type = "checkbox" name = "pregnancy-events" value = "pregnancy-events-pre-eclampsia" />
+                  </label>
+                </div>
+                <div class = "col-md-3">
+                  <label>Rh negative
+                    <input type = "checkbox" name = "pregnancy-events" value = "pregnancy-events-rh-negative" />
+                  </label>
+                </div>
+                <div class = "col-md-3">
+                  <label>Toxemia
+                    <input type = "checkbox" name = "pregnancy-events" value = "pregnancy-events-toxemia" />
+                  </label>
+                </div>
+                <div class = "col-md-3">
+                  <label>Toxin exposure
+                    <input type = "checkbox" name = "pregnancy-events" value = "pregnancy-events-toxin-exposure" />
+                  </label>
+                </div>
+              </div>
+              <div class = "row">
+                <div class = "col-md-3">
+                  <label>Blood transfusions
+                    <input type = "checkbox" name = "pregnancy-events" value = "pregnancy-events-blood-transfusion" />
+                  </label>
+                </div>
+                <div class = "col-md-3">
+                  <label>Accidents
+                    <input type = "checkbox" name = "pregnancy-events" value = "pregnancy-events-accidents" />
+                  </label>
+                </div>
+                <div class = "col-md-3">
+                  <label>Bleeding/spotting
+                    <input type = "checkbox" name = "pregnancy-events" value = "pregnancy-events-bleeding-spotting" />
+                  </label>
+                </div>
+                <div class = "col-md-3">
+                  <label>Cervical incompetence
+                    <input type = "checkbox" name = "pregnancy-events" value = "pregnancy-events-cervical-incompetence" />
+                  </label>
+                </div>
+              </div>
+              <div class = "row">
+                <div class = "col-md-3">
+                  <label>Infections
+                    <input type = "checkbox" name = "pregnancy-events" value = "pregnancy-events-infections" />
+                  </label>
+                </div>
+                <div class = "col-md-3">
+                  <label>Pre-term labor
+                    <input type = "checkbox" name = "pregnancy-events" value = "pregnancy-events-pre-term-labor" />
+                  </label>
+                </div>
+                <div class = "col-md-3">
+                  <label>Uterine/uterine fluid problems
+                    <input type = "checkbox" name = "pregnancy-events" value = "pregnancy-events-uterine-problems" />
+                  </label>
+                </div>
+                <label for = "pregnancy-events-other" class = "col-md-1">Other</label>
+                <div class = "col-md-2">
+                  <input type = "text" class = "form-control" id = "pregnancy-events-other" />
+                </div>
+              </div>
+          </div>
+          <div class = "form-group">
+            <label for = "pregnancy-events-explain">Please explain any checked items</label>
+            <textarea rows="3" class = "form-control" name = "pregnancy-events-explain" id = "pregnancy-events-explain"></textarea>
+          </div>
+          <div class = "form-group">
+            <label for = "pregnancy-drugs-alcohol" class = "col-md-4">Were medications, drugs, or alcohol used during pregnancy?</label>
+            <div class = "col-md-3">
+              <label>Yes
+                <input type = "radio" name = "pregnancy-drugs-alcohol" value = "pregnancy-drugs-alcohol-yes" />
+              </label>
+            </div>
+            <div class = "col-md-3">
+              <label>No
+                <input type = "radio" name = "pregnancy-drugs-alcohol" value = "pregnancy-drugs-alcohol-no" />
+              </label>
+            </div>
+          </div>
+          <div class = "form-group">
+            <label for = "pregnancy-drugs-alcohol-explain">If yes, please explain</label>
+            <textarea class = "form-control" rows = "1" name = "pregnancy-drugs-alcohol-explain" id = "pregnancy-drugs-alcohol-explain"></textarea>
+          </div>
+          <div class = "form-group">
+            <label for = "pregnancy-length" class = "col-md-2">Length of pregnancy</label>
+            <div class = "col-md-3">
+              <input type = "text" class = "form-control" id = "pregnancy-length" />
+            </div>
+            <label for = "pregnancy-birth-weight" class = "col-md-2">Birth weight of child</label>
+            <div class = "col-md-3">
+              <input type = "text" class = "form-control" id = "pregnancy-birth-weight" />
+            </div>
+            <label for = "pregnancy-length-of-labor" class = "col-md-1">Length of labor</label>
+            <div class = "col-md-1">
+              <input type = "text" class = "form-control" id = "pregnancy-length-of-labor" />
+            </div>
+          </div>
+          <div class = "form-group">
+            <label for = "pregnancy-days-in-nursery" class = "col-md-2">Days spent in nursery</label>
+            <div class = "col-md-2">
+              <input type = "text" class = "form-control" id = "pregnancy-days-in-nursery" />
+            </div>
+            <label for = "pregnancy-nicu" class = "col-md-1">NICU</label>
+            <div class = "col-md-1">
+              <input type = "text" class = "form-control" id = "pregnancy-nicu" />
+            </div>
+            <label for = "pregnancy-type-of-delivery" class = "col-md-2">Type of delivery</label>
+            <div class = "col-md-2">
+              <label>C-section
+                <input type = "radio" name = "pregnancy-type-of-delivery" value = "pregnancy-type-of-delivery-c-section" id = "pregnancy-type-of-delivery-c-section" />
+              </label>
+            </div>
+            <div class = "col-md-1">
+              <label>Vaginal
+                <input type = "radio" name = "pregnancy-type-of-delivery" value = "pregnancy-type-of-delivery-vaginal" id = "pregnancy-type-of-delivery-vaginal" />
+              </label>
+            </div>
+          </div>
+          <div class = "form-group">
+            <label for = "labor-complications">Any complications <em>during</em> labor and delivery for mother or child?</label>
+            <div class = "row">
+              <div class = "col-md-4">
+                <label>Maternal infection
+                  <input type = "checkbox" name = "labor-complications" value = "labor-complications-maternal-infection" />
+                </label>
+              </div>
+              <div class = "col-md-4">
+                <label>Low/high red/white blood cell count
+                  <input type = "checkbox" name = "labor-complications" value = "labor-complications-blood-issues" />
+                </label>
+              </div>
+              <div class = "col-md-4">
+                <label>Pelvic or cervical problems
+                  <input type = "checkbox" name = "labor-complications" value = "labor-complications-pelvis-cervical-problems" />
+                </label>
+              </div>
+            </div>
+            <div class = "row">
+              <div class = "col-md-4">
+                <label>Placenta problems
+                  <input type = "checkbox" name = "labor-complications" value = "labor-complications-placenta-problems" />
+                </label>
+              </div>
+              <div class = "col-md-4">
+                <label>Baby had cord around neck
+                  <input type = "checkbox" name = "labor-complications" value = "labor-complications-baby-cord-neck" />
+                </label>
+              </div>
+              <div class = "col-md-4">
+                <label>Dysfunctional labor
+                  <input type = "checkbox" name = "labor-complications" value = "labor-complications-dysfunctional-labor" />
+                </label>
+              </div>
+              </div>
+              <div class = "row">
+                <div class = "col-md-4">
+                  <label>Baby had high/low heart rate
+                    <input type = "checkbox" name = "labor-complications" value = "labor-complications-hear-rate" />
+                  </label>
+                </div>
+                <div class = "col-md-4">
+                  <label>Cord problems (knots, prolapsed, compression)
+                    <input type = "checkbox" name = "labor-complications" value = "labor-complications-cord-problems" />
+                  </label>
+                </div>
+                <div class = "col-md-4">
+                  <label>Baby had hear rate decelerations
+                    <input type = "checkbox" name = "labor-complications" value = "labor-complications-heart-rate-deceleration" />
+                  </label>
+                </div>
+              </div>
+              <div class = "row">
+                <div class = "col-md-4">
+                  <label>Fetal distress noted
+                    <input type = "checkbox" name = "labor-complications" value = "labor-complications-fetal-distress" />
+                  </label>
+                </div>
+                <div class = "col-md-4">
+                  <label>Meconium was noted
+                    <input type = "checkbox" name = "labor-complications" value = "labor-complications-meconium-noted" />
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class = "form-group">
+              <label for = "labor-complications-explain">Please explain any checked items</label>
+              <textarea rows="3" class = "form-control" name = "labor-complications-explain" id = "labor-conplications-explain"></textarea>
+            </div>
+            <div class = "form-group">
+              <label for = "problems-after-birth">Any medical complications for child <em>after</em> birth?</label>
+              <div class = "row">
+                <div class = "col-md-3">
+                  <label>Blue/cyanotic at birth
+                    <input type = "checkbox" name = "problems-after-birth" value = "problems-after-birth-blue-cyanotic" />
+                  </label>
+                </div>
+                <div class = "col-md-3">
+                  <label>Required stimulation to breather
+                    <input type = "checkbox" name = "problems-after-birth" value = "problems-after-birth-required-stimulation" />
+                  </label>
+                </div>
+                <div class = "col-md-3">
+                  <label>Required oxygen at birth
+                    <input type = "checkbox" name = "problems-after-birth" value = "problems-after-birth-required-oxygen" />
+                  </label>
+                </div>
+                <div class = "col-md-3">
+                  <label>Infections
+                    <input type = "checkbox" name = "problems-after-birth" value = "problems-after-birth-infections" />
+                  </label>
+                </div>
+              </div>
+              <div class = "row">
+                <div class = "col-md-3">
+                  <label>Tremoring/seizures
+                    <input type = "checkbox" name = "problems-after-birth" value = "problems-after-birth-tremoring-seizures" />
+                  </label>
+                </div>
+                <div class = "col-md-3">
+                  <label>Considered small for age
+                    <input type = "checkbox" name = "problems-after-birth" value = "problems-after-birth-small-for-age" />
+                  </label>
+                </div>
+                <div class = "col-md-3">
+                  <label>Very low tone
+                    <input type = "checkbox" name = "problems-after-birth" value = "problems-after-birth-very-low-tone" />
+                  </label>
+                </div>
+                  <div class = "col-md-3">
+                    <label>Brain hemorrhage
+                      <input type = "checkbox" name = "problems-after-birth" value = "problems-after-birth-brain-hemorrhage" />
+                    </label>
+                  </div>
+                </div>
+                <div class = "row">
+                  <div class = "col-md-3">
+                    <label>Anemia/transfusions
+                      <input type = "checkbox" name = "problems-after-birth" value = "problems-after-birth-anemia-transfusions" />
+                    </label>
+                  </div>
+                  <div class = "col-md-3">
+                    <label>Rh incompatibility problems
+                      <input type = "checkbox" name = "problems-after-birth" value = "problems-after-birth-rh-incompatibility" />
+                    </label>
+                  </div>
+                  <div class = "col-md-3">
+                    <label>Jaundice
+                      <input type = "checkbox" name = "problems-after-birth" value = "problems-after-birth-jaundice" />
+                    </label>
+                  </div>
+                  <div class = "col-md-3">
+                    <label>Bruising
+                      <input type = "checkbox" name = "problems-after-birth" value = "problems-after-birth-bruising" />
+                    </label>
+                  </div>
+                </div>
+                <div class = "row">
+                  <div class = "col-md-3">
+                    <label>Required resuscitations
+                      <input type = "checkbox" name = "problems-after-birth" value = "problems-after-birth-required-resuscitations" />
+                    </label>
+                  </div>
+                  <div class = "col-md-3">
+                    <label>Congenital birth defects
+                      <input type = "checkbox" name = "problems-after-birth" value = "problems-after-birth-congenital-defects" />
+                    </label>
+                  </div>
+                  <div class = "col-md-3">
+                    <label>Aspiration (meconium/full)
+                      <input type = "checkbox" name = "problems-after-birth" value = "problems-after-birth-aspiration" />
+                    </label>
+                  </div>
+                  <div class = "col-md-3">
+                    <label>Ventilation
+                      <input type = "checkbox" name = "problems-after-birth" value = "problems-after-birth-ventilation" />
+                    </label>
+                  </div>
+                </div>
+                <div class = "row">
+                  <div class = "col-md-3">
+                    <label>Tube feedings
+                      <input type = "checkbox" name = "problems-after-birth" value = "problems-after-birth-tube-feedings" />
+                    </label>
+                  </div>
+                  <div class = "col-md-3">
+                    <label>Respiratory distress/symptoms
+                      <input type = "checkbox" name = "problems-after-birth" value = "problems-after-birth-respiratory-issues" />
+                    </label>
+                  </div>
+                  <div class = "col-md-3">
+                    <label>Choking/vomiting episodes
+                      <input type = "checkbox" name = "problems-after-birth" value = "problems-after-birth-choking-vomiting" />
+                    </label>
+                  </div>
+                  <div class = "col-md-3">
+                    <label>Medications
+                      <input type = "checkbox" name = "problems-after-birth" value = "problems-after-birth-medications" />
+                    </label>
+                  </div>
+                </div>
+            </div>
+            <div class = "form-group">
+              <label for = "problems-after-birth-explain">Please explain any checked items</label>
+              <textarea class = "form-control" rows = "3" name = "problems-after-birth-explain" id = "problems-after-birth-explain"></textarea>
+            </div>
+            <hr class = "thick" />
+        </fieldset>
+        <fieldset>
+          <legend class = "text-uppercase text-center">Signatures</legend>
+          <div class = "form-group">
+            <div class = "col-md-12">
+              <label><input type = "checkbox" name = "end-agreement" id = "end-agreement-yes" required />
+                I acknowledge that the above information is true and correct to the best of my knowledge. I authorize reatement for the above named patient by the staff of Speech Link. I understand and agree tjay I am resposible for payment at the time services are rendered.
+              </label>
+            </div>
+          </div>
+          <button class = "btn btn-default" type = "submit" style = "margin:0 auto;">Submit</button>
+        </fieldset>
+      </form>
+      <h2>Appointment Inquiry Form</h2>
+      <form class = "form-horizontal" id = "appointmentinquiry">
+        <fieldset>
+          <legend class = "text-uppercase text-center">Appointment Inquiry</legend>
+          <p>Please provide us with these details and we will contact you as soon as possible to schedule an appointment or evaluation.</p>
+          <div class = "form-group">
+            <label for = "parent-name" class = "col-md-2">Your Name</label>
+            <div class = "col-md-3">
+              <input type = "text" class = "form-control" id = "parent-name" name = "parent-name" />
+            </div>
+          </div>
+          <div class = "form-group">
+            <label for = "child-name" class = "col-md-2">Child&apos;s Name</label>
+            <div class = "col-md-3">
+              <input type = "text" class = "form-control" id = "child-name" name = "child-name" />
+            </div>
+          </div>
+          <div class = "form-group">
+            <label for = "child-age" class = "col-md-2">Child&apos;s Age</label>
+            <div class = "col-md-3">
+              <input type = "text" class = "form-control" id = "child-age" name = "child-age" />
+            </div>
+          </div>
+          <div class = "form-group">
+            <label for = "reason-for-inquiry" class = "col-md-2">Reason for Inquiry</label>
+            <div class = "col-md-3">
+              <input type = "text" class = "form-control" id = "reason-for-inquiry" name = "reason-for-inquiry" />
+            </div>
+          </div>
+          <div class = "form-group">
+            <label for = "previous-therapy" class = "col-md-4">Has your child had a recent speech &amp; language evaluation?</label>
+            <div class = "col-md-3">
+              <label>Yes
+                <input type = "radio" name = "previous-therapy" id = "previous-therapy-yes" />
+              </label>
+            </div>
+            <div class = "col-md-3">
+              <label>No
+                <input type = "radio" name = "previous-therapy" id = "previous-therapy-no" />
+              </label>
+            </div>
+          </div>
+          <div class = "form-group">
+            <label for = "previous-therapy-explain">If yes, please tell us the location and duration of prior services</label>
+            <textarea name = "previous-therapy-explain" id = "previous-therapy-explain" class = "form-control" rows = "3"></textarea>
+          </div>
+          <div class = "form-group">
+            <button class = "btn btn-default" type = "submit">Submit</button>
+          </div>
+        </fieldset>
+      </form>
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2016 SpeechLink, Inc. &middot;</p>
+      </footer>
+      </div><!-- /.container -->
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="./bootstrap/js/jquery.min.js"><\/script>')</script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="./bootstrap/js/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="./bootstrap/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
