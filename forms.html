@@ -589,15 +589,270 @@
             </div>
             <hr class = "thick" />
         </fieldset>
+        <hr />
         <fieldset>
-          <legend class = "text-uppercase text-center">Signatures</legend>
+          <legend class = "text-uppercase text-center">Referral Information</legend>
           <div class = "form-group">
-            <div class = "col-md-12">
-              <label><input type = "checkbox" name = "end-agreement" id = "end-agreement-yes" required />
-                I acknowledge that the above information is true and correct to the best of my knowledge. I authorize treatment for the above named patient by the staff of SpeechLink. I understand and agree that I am resposible for payment at the time services are rendered.
-              </label>
+            <label for = "referral-reason" class = "col-md-2">Reason for referral:</label>
+            <div class = "col-md-3">
+              <input type = "text" class = "form-control" id = "referral-reason" >
+            </div>
+            <label for = "referred-by" class = "col-md-2">Referred by:</label>
+            <div class = "col-md-3">
+              <input type = "text" class = "form-control" id = "referred-by" > <!-- Remember to fix this -->
             </div>
           </div>
+          <div class = "form-group">
+            <label for = "current-problem-description">Describe present problem:</label>
+            <textarea class = "form-control" name = "current-problem-description" rows = "3"></textarea>
+          </div>
+          <div class = "form-group">
+            <label for = "significant-changes-recent" class = "col-md-2">Any significant changes in the last 6 months?</label>
+            <div class = "col-md-1">
+              <label>Yes
+                  <input type = "radio" name = "significant-changes-recent" value = "significant-changes-recent-yes" id = "significant-changes-recent-yes" />
+              </label>
+            </div>
+            <div class = "col-md-1">
+              <label>No
+                <input type = "radio" name = "significant-changes-recent" value = "significant-changes-recent-no" id = "significant-changes-recent-no" />
+              </label>
+            </div>
+            <label for = "significant-changes-explain" class = "col-md-2">If yes, please explain:</label>
+            <div class = "col-md-3">
+              <input type = "text" class = "form-control" id = "significant-changes-explain" />
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend class = "text-uppercase text-center">Child&apos;s Medical History</legend>
+          <div class = "form-group">
+            <label for = "immunizations-current" class = "col-md-2">Are immunizations current?</label>
+            <div class = "col-md-1">
+              <label>Yes
+                  <input type = "radio" name = "immunizations-current" value = "immunizations-current-yes" id = "immunizations-current-yes" />
+              </label>
+            </div>
+            <div class = "col-md-1">
+              <label>No
+                <input type = "radio" name = "immunizations-current" value = "immunizations-current-no" id = "immunizations-current-no" />
+              </label>
+            </div>
+            <label for = "current-general-health" class = "col-md-2">Current general health:</label>
+            <div class = "col-md-3">
+              <input type = "text" class = "form-control" id = "current-general-health" />
+            </div>
+          </div>
+          <div class = "form-group">
+            <label for = "feeding-swallowing-problems" class = "col-md-2">Any feeding or swallowing problems?</label>
+            <div class = "col-md-1">
+              <label>Yes
+                  <input type = "radio" name = "feeding-swallowing-problems" value = "feeding-swallowing-problems-yes" id = "feeding-swallowing-problems-yes" />
+              </label>
+            </div>
+            <div class = "col-md-1">
+              <label>No
+                <input type = "radio" name = "feeding-swallowing-problems" value = "feeding-swallowing-problems-no" id = "feeding-swallowing-problems-no" />
+              </label>
+            </div>
+            <label for = "feeding-swallowing-explain" class = "col-md-2">If yes, please explain:</label>
+            <div class = "col-md-3">
+              <input type = "text" class = "form-control" id = "feeding-swallowing-explain" />
+            </div>
+          </div>
+          <div class = "form-group">
+            <label for = "ear-infections" class = "col-md-2">Has your child had any ear infections?</label>
+            <div class = "col-md-1">
+              <label>Yes
+                  <input type = "radio" name = "ear-infections" value = "ear-infections-yes" id = "ear-infections-yes" />
+              </label>
+            </div>
+            <div class = "col-md-1">
+              <label>No
+                <input type = "radio" name = "ear-infections" value = "ear-infections-no" id = "ear-infections-no" />
+              </label>
+            </div>
+            <label for = "last-hearing-test" class = "col-md-2">Last hearing test:</label>
+            <div class = "col-md-3">
+              <input type = "date" class = "form-control" id = "last-hearing-test" />
+            </div>
+          </div>
+          <div class = "form-group">
+            <label for = "hearing-results" class = "col-md-3">Results:</label>
+            <div class = "col-md-3">
+              <label>Pass
+                  <input type = "radio" name = "hearing-results" value = "hearing-results-pass" id = "hearing-results-pass" />
+              </label>
+            </div>
+              <div class = "col-md-3">
+                <label>No pass
+                    <input type = "radio" name = "hearing-results" value = "hearing-results-nopass" id = "hearing-results-nopass" />
+                </label>
+              </div>
+          </div>
+          <div class ="form-group">
+            <label for = "ear-infections-explain">If your child has had an ear infection, please explain:</label>
+            <textarea class = "form-control" name = "ear-infections-explain" rows = "3"></textarea>
+          </div>
+          <div class = "form-group">
+            <label for = "allgergies" class = "col-md-2">Allergies?</label>
+            <div class = "col-md-1">
+              <label>Yes
+                  <input type = "radio" name = "allgergies" value = "allgergies-yes" id = "allgergies-yes" />
+              </label>
+            </div>
+            <div class = "col-md-1">
+              <label>No
+                <input type = "radio" name = "allgergies" value = "allgergies-no" id = "allgergies-no" />
+              </label>
+            </div>
+            <label for = "allergies-explain" class = "col-md-2">If yes, please explain:</label>
+            <div class = "col-md-3">
+              <input type = "text" class = "form-control" id = "allergies-explain" />
+            </div>
+          </div>
+          <div class = "form-group">
+            <label for = "regressions" class = "col-md-2">Has your child experienced any regressions?</label>
+            <div class = "col-md-1">
+              <label>Yes
+                  <input type = "radio" name = "regressions" value = "regressions-yes" id = "regressions-yes" />
+              </label>
+            </div>
+            <div class = "col-md-1">
+              <label>No
+                <input type = "radio" name = "regressions" value = "regressions-no" id = "regressions-no" />
+              </label>
+            </div>
+            <label for = "regressions-explain" class = "col-md-2">If yes, please explain:</label>
+            <div class = "col-md-3">
+              <input type = "text" class = "form-control" id = "regressions-explain" />
+            </div>
+          </div>
+          <div class = "form-group">
+            <label for = "recent-operations-accidents" class = "col-md-2">Recent operations or accidents?</label>
+            <div class = "col-md-1">
+              <label>Yes
+                  <input type = "radio" name = "recent-operations-accidents" value = "recent-operations-accidents-yes" id = "recent-operations-accidents-yes" />
+              </label>
+            </div>
+            <div class = "col-md-1">
+              <label>No
+                <input type = "radio" name = "recent-operations-accidents" value = "recent-operations-accidents-no" id = "recent-operations-accidents-no" />
+              </label>
+            </div>
+            <label for = "recent-operations-accidents-explain" class = "col-md-2">If yes, please explain:</label>
+            <div class = "col-md-3">
+              <input type = "text" class = "form-control" id = "recent-operations-accidents-explain" />
+            </div>
+          </div>
+          <div class = "form-group">
+            <label for = "current-medications-explain">If your child is currently taking any medications, please list them and why they are needed</label>
+            <textarea class = "form-control" name ="current-medications-explain" rows ="3"></textarea>
+          </div>
+          <div class = "form-group">
+            <label for = "school-strengths-difficulties">If your child is in school, please describe any strengths or difficulties in reading, writing, or spelling:</label>
+            <textarea class = "form-control" name = "school-strengths-difficulties" rows = "3"></textarea>
+          </div>
+          <div class = "form-group">
+            <label for = "name-of-current-school" class = "col-md-3">Name of current school:</label>
+            <div class = "col-md-3">
+              <input type = "text" class = "form-control" id = "name-of-current-school" name = "name-of-current-school"/>
+            </div>
+            <label for = "grade" class = "col-md-1">Grade:</label>
+            <div class = "col-md-1">
+              <input type = "text" class = "form-control" id = "grade" name = "grade"/>
+            </div>
+          </div>
+          <div class = "form-group">
+            <label class ="col-md-3" for = "address-of-school">School&apos;s address:</label>
+            <div class = "col-md-4">
+              <input type = "text" class = "form-control" name = "address-of-school" />
+            </div>
+          </div>
+          <div class = "form-group">
+            <label for = "school-phone" class = "col-md-2">Phone:</label>
+            <div class = "col-md-3">
+              <input type = "text" class = "form-control" id = "school-phone" />
+            </div>
+            <label for = "special-education" class = "col-md-3">Enrolled in any special education services?</label>
+            <div class = "col-md-3">
+              <input type = "text" class = "form-control" id = "special-education" />
+            </div>
+            </div>
+            <div class = "form-group">
+              <label class ="col-md-2" for = "current-teachers">Current teacher(s):</label>
+              <div class = "col-md-3">
+                <input type = "text" class = "form-control" name = "current-teachers" id = "current-teachers"/>
+              </div>
+            </div>
+            <div class = "form-group">
+              <label for = "teacher-concerns">Describe any concerns shared by the teacher</label>
+              <textarea class = "form-control" name = "teacher-concerns" rows = "3"></textarea>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend class = "text-uppercase text-center">Developmental History</legend>
+            <div class = "form-group">
+              <p class = "text-center">Provide the approximate age at which the child began to do the following activities</p>
+            </div>
+            <div class = "form-group">
+              <div class = "col-md-1"><input class = "form-control" name = "developmental-history-crawl" type = "text"></div>
+              <label for = "developmental-history-crawl" class = "col-md-3">Crawl</label>
+              <div class = "col-md-1"><input class = "form-control" name = "developmental-history-sit" type = "text"></div>
+              <label for = "developmental-history-sit" class = "col-md-3">Sit</label>
+              <div class = "col-md-1"><input class = "form-control" name = "developmental-history-stand" type = "text"></div>
+              <label for = "developmental-history-stand" class = "col-md-3">Stand</label>
+            </div>
+            <div class = "form-group">
+              <div class = "col-md-1"><input class = "form-control" name = "developmental-history-walk" type = "text"></div>
+              <label for = "developmental-history-walk" class = "col-md-3">Walk</label>
+              <div class = "col-md-1"><input class = "form-control" name = "developmental-history-feed-self" type = "text"></div>
+              <label for = "developmental-history-feed-self" class = "col-md-3">Feed self</label>
+              <div class = "col-md-1"><input class = "form-control" name = "developmental-history-dress-self" type = "text"></div>
+              <label for = "developmental-history-dress-self" class = "col-md-3">Dress self</label>
+            </div>
+            <div class = "form-group">
+              <div class = "col-md-1"><input class = "form-control" name = "developmental-history-crawl" type = "text"></div>
+              <label for = "developmental-history-crawl" class = "col-md-3">Crawl</label>
+              <div class = "col-md-1"><input class = "form-control" name = "developmental-history-sit" type = "text"></div>
+              <label for = "developmental-history-sit" class = "col-md-3">Sit</label>
+              <div class = "col-md-1"><input class = "form-control" name = "developmental-history-stand" type = "text"></div>
+              <label for = "developmental-history-stand" class = "col-md-3">Stand</label>
+            </div>
+            <div class = "form-group">
+              <div class = "col-md-1"><input class = "form-control" name = "developmental-history-use-toilet" type = "text"></div>
+              <label for = "developmental-history-use-toilet" class = "col-md-3">Use toilet</label>
+              <div class = "col-md-1"><input class = "form-control" name = "developmental-history-use-single-words" type = "text"></div>
+              <label for = "developmental-history-use-single-words" class = "col-md-3">Use single words</label>
+              <div class = "col-md-1"><input class = "form-control" name = "developmental-history-combine-words" type = "text"></div>
+              <label for = "developmental-history-combine-words" class = "col-md-3">Combine words</label>
+            </div>
+            <div class = "form-group">
+              <div class = "col-md-1"><input class = "form-control" name = "developmental-history-name-simple-objects" type = "text"></div>
+              <label for = "developmental-history-name-simple-objects" class = "col-md-3">Name simple objects</label>
+              <div class = "col-md-1"><input class = "form-control" name = "developmental-history-use-simple-questions" type = "text"></div>
+              <label for = "developmental-history-use-simple-questions" class = "col-md-3">Use simple questions</label>
+              <div class = "col-md-1"><input class = "form-control" name = "developmental-history-engage-in-conversation" type = "text"></div>
+              <label for = "developmental-history-engage-in-conversation" class = "col-md-3">Engage in conversation</label>
+            </div>
+            <div class = "form-group">
+              <label for = "child-development-difficulties">Does the child have difficulty walking, running, or participating in other activities which require small or large muscle coordination? If so, explain:</label>
+              <textarea class = "form-control" rows = "3" name = "child-development-difficulties"></textarea>
+            </div>
+
+          </fieldset>
+          <hr class = "thick" />
+          <fieldset>
+            <legend class = "text-uppercase text-center">Signatures</legend>
+            <div class = "form-group">
+              <div class = "col-md-12">
+                <label><input type = "checkbox" name = "end-agreement" id = "end-agreement-yes" required />
+                  I acknowledge that the above information is true and correct to the best of my knowledge. I authorize treatment for the above named patient by the staff of SpeechLink. I understand and agree that I am resposible for payment at the time services are rendered.
+                </label>
+              </div>
+            </div>
+          </fieldset>
+
           <button class = "btn btn-default" type = "submit" style = "margin:0 auto;">Submit</button>
         </fieldset>
       </form>
